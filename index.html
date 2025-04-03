@@ -2,11 +2,21 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <meta name="locale" content="en-US" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="ROBOTS" content="NONE, NOARCHIVE" />
+    <meta name="GOOGLEBOT" content="NOARCHIVE" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes"
+    />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>User Authentication</title>
-    <link href={{ request.url | base }}/bootstrap.min.css rel="stylesheet">
-    <link href={{ request.url | base }}/theme.css rel="stylesheet">
+    <link
+      href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <style>
       /* Reset and base styles */
       * {
@@ -1909,7 +1919,7 @@
 
       /* endinject */
     </style>
-    <script defer>
+    <!--     <script defer>
       const makeIntroVisible = function (apiElement, introElement) {
         console.log("searching for Phonefactor screen");
         if (
@@ -1968,7 +1978,7 @@
       const observer = new MutationObserver(callBack);
       // Start observing the target node for configured mutations
       observer.observe(document, config);
-    </script>
+    </script> -->
   </head>
 
   <body>
@@ -2011,7 +2021,7 @@
     <main class="login-section">
       <div class="login-container">
         <h2>Sign in to your account</h2>
-        <div id="api"></div>
+        <div id="api" role="main"></div>
       </div>
     </main>
   </body>
