@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>User Authentication</title>
-    <link href={{ request.url | base }}/bootstrap.min.css rel="stylesheet">
+    <link href={{ request.url | base }}/bootstrap.min.css rel="stylesheet">`
     <link href={{ request.url | base }}/theme.css rel="stylesheet">
     <style>
       /* Reset and base styles */
@@ -89,7 +89,7 @@
       }
 
       #GoogleExchange {
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAb1BMVEXcTkH////cTD/bSj3ZQDLYOyzaRDbeV0vbSDrZPS/66Obyv7rsnpfpkorjcWfgZlvXOCr++Pj5393haFz88/L88fD67Or319T1zsv1zsrxuLPuqaLuqKLoi4LlfXTgYlbWMyTWMiPwtrHwta/fXVH/sCIIAAAAmElEQVQ4y+2RyQ7DIBBDMcwAIXvovqXb/39jRaX0AEmr5px3tSV7PGLhX6TVRFpN61l9zPNS6kn9gDcXO67zDnCnO2BCiNIyMtgKKJgyY2zQ68JEDtqju0nFTcOsxPUMw1GDDUqt+tY51/YNVlhvacTgEfCDIY0Q/lkBSg4RaUmmDo4/JdMzHy1Q2ejMeCj6PrXQP5+1MI8X0Y4HL4c826EAAAAASUVORK5CYII=) !important;
+        background-image: url(https://acespatientauth.b2clogin.com/static/tenant/templates/idp_logos/colored/google.svg) !important;
       }
 
       #logo-icon {
@@ -102,19 +102,19 @@
       }
 
       #MicrosoftAccountExchange {
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAPFBMVEU1pe/////t+v4uoe5btvNixPVVwfUsoe9tyfXU7/y95vu24vrd9f5NtfLH6/ys3/o/sPE6qfD2/f+f2vnAysuQAAAAaElEQVQ4y93SORKAIAwFUEGCsoT1/nd1JkkDFhY24qt+8VMkk20lu6DAaVBOBsVKsuO8aYo08IqlYyxoRTQExfyKheRIgu5Yl4KoVhSUgNOhoiYRsmb5g2u+LtzXDNOhjKgoAZ9/8k8uZWsGqcIav5wAAAAASUVORK5CYII=) !important;
+        background-image: url(https://acespatientauth.b2clogin.com/static/tenant/templates/idp_logos/colored/microsoft.svg) !important;
       }
 
       #AppleExchange {
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAe1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8GYGg2AAAAKXRSTlMABPr88/Hw7evn497b2dbFv7qbl4+OioeEgX16eHd0cm9sZmNeXFlOSDo2IKYbhAAAAL5JREFUOMvF01kSgyAQBNCWTUFxX+Ke5f53TEgwiKKVn6Z+Mc9mqBmE/pwERIx5mBdc9WAAgQz6sYOwJoACCIgQDqCrgYBvo3VtB8ijevkCjEZB9T4Nf7JQoL8HYVHzKhiIDyreAipG0HKhA0foaYN1QztQM0HyqB0QVoCJ+yJg3lI7UDJBAtoBhp4RKEbQYoEC2PuAmwnSBQBm7PUBQCkiexw6BkD45gLwKKBBJjYcKJxML87oTN790X/6AQ2aJAkodZhAAAAAAElFTkSuQmCC) !important;
+        background-image: url(https://acespatientauth.b2clogin.com/static/tenant/templates/idp_logos/colored/apple.svg) !important;
       }
 
       #PhoneSignIn {
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAYFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////98JRy6AAAAIHRSTlMA+/Xz7+nm4t7Z1tTQzMrGw8C+u7WxrqqmopuWk4mHcKoItAAAAIhJREFUOMvl0ccOgzAQBNBZeu+QQvL/P4kvsWQjcyCHSJn7SiNrxoz+QgQBIQKRO7zgrgcDABnwxynDlgAXAIhJcICeBgK+n+1rO0ge1csXYDQK6vdp+JOFAv09CIuaV8FAfFTxFlAxgpYLHTjCQBusG9qBmgmSR+2AsAJM3BcB85bagZIJkr898Aaer0MMo7YD+AAAAABJRU5ErkJggg==) !important;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTIxLjM4NCwxNy43NTJhMi4xMDgsMi4xMDgsMCwwLDEtLjUyMiwzLjM1OWE3LjU0Myw3LjU0MywwLDAsMS01LjQ3Ni42NDJDMTAuNSwyMC41MjMsMy40NzcsMTMuNSwyLjI0Nyw4LjYxNGE3LjU0Myw3LjU0MywwLDAsMS42NDItNS40NzYsMi4xMDgsMi4xMDgsMCwwLDEsMy4zNTktLjUyMkw4LjMzMyw0LjdhMi4wOTQsMi4wOTQsMCwwLDEsLjQ0NSwyLjMyOEEzLjg3NywzLjg3NywwLDAsMSw4LDguMmMtMi4zODQsMi4zODQsNS40MTcsMTAuMTg1LDcuOCw3LjhhMy44NzcsMy44NzcsMCwwLDEsMS4xNzMtLjc4MSwyLjA5MiwyLjA5MiwwLDAsMSwyLjMyOC40NDVaIi8+PC9zdmc+) !important;
       }
 
       #EmailSignIn {
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAXVBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+9lJFAAAAHnRSTlMABPv49/Xz7+vn4t7b2dbTz8zJxsO/u7ewrKikoYU5w4qXAAAAhElEQVQ4y+XTuRKDMAwFUNmMwxp2yPL/f5lEsgernQyZ9Le6KJ4sy/+JAR7Cx8wdJqwKuEFw4zvk2AXjASQq6AA1FyT4PZp7OaDuiZaPAEajIF6n4Z8sFMj3QVhkeRYMxLuE10DGCHImdGAPLTVYZrQDGROkG9oBbgUYuM8C5jm1AwkTpOQHJCAG9YVXJnQAAAAASUVORK5CYII=) !important;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTIyIDV2NGwtMTAgNEwyIDlWNWEyIDIgMCAwIDEgMi0yaDE4YTIgMiAwIDAgMSAyIDJ6TTIgMTEuMTU0VjE5YTIgMiAwIDAgMCAyIDJoMThhMiAyIDAgMCAwIDItMlYxMS4xNTRsLTEwIDR6Ii8+PC9zdmc+) !important;
       }
 
       .intro {
