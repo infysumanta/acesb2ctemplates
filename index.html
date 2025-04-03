@@ -90,6 +90,7 @@
 
       #GoogleExchange {
         background-image: url(https://acespatientauth.b2clogin.com/static/tenant/templates/idp_logos/colored/google.svg) !important;
+        background-size: 24px !important;
       }
 
       #logo-icon {
@@ -115,6 +116,26 @@
 
       #EmailSignIn {
         background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTIyIDV2NGwtMTAgNEwyIDlWNWEyIDIgMCAwIDEgMi0yaDE4YTIgMiAwIDAgMSAyIDJ6TTIgMTEuMTU0VjE5YTIgMiAwIDAgMCAyIDJoMThhMiAyIDAgMCAwIDItMlYxMS4xNTRsLTEwIDR6Ii8+PC9zdmc+) !important;
+      }
+
+      @media (min-width: 768px) {
+        #GoogleExchange,
+        #MicrosoftAccountExchange,
+        #AppleExchange,
+        #PhoneSignIn,
+        #EmailSignIn {
+          background-size: 28px !important;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        #GoogleExchange,
+        #MicrosoftAccountExchange,
+        #AppleExchange,
+        #PhoneSignIn,
+        #EmailSignIn {
+          background-size: 32px !important;
+        }
       }
 
       .intro {
